@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>list</title>
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script src="js/move.js"></script>
+		<script src="js/listData.js"></script>
+		<script src="js/list.js"></script>
+		<link rel="stylesheet" href="css/reset.css" />
+	    <link rel="stylesheet" href="css/animate.css" />
+		<link rel="stylesheet" href="css/list.css" />
+	</head>
+	<body>
+		<div id="header"></div>
+		<div class="scroll">
+			<div class="scroll-one"></div>
+			<div class="scroll-two"></div>
+		</div>
+		<div class="list-wrap">
+			<div class="list-box">
+				
+				<div class="company-font">宜家创意灵感</div>
+				<div class="company-english">About Inspiration</div>
+				
+				
+				<ul class="list-ul clearfix" id="articleList">
+					<li class="content_one">
+						<div class="li-img">
+							
+							<img src="images/IKEA-relaxing__201822_idli01a_01_rf_PH148023.jpg" alt="" />
+						</div>
+						<div class="li-font">
+							<p class="zhuo">卓新思创重装出发</p>
+							<p class="shuzi">2016-1-11</p>
+							<p class="zhuosi">卓新思创，起源服务于专业技术人员继续教育基地的在线培训平台。受到客户的...</p>
+						</div>
+					</li>
+					<li class="content_one">
+						<div class="li-img">
+							
+							<img src="images/list_img02.jpg" alt="" />
+						</div>
+						<div class="li-font">
+							<p class="zhuo">卓新思创重装出发</p>
+							<p class="shuzi">2016-1-11</p>
+							<p class="zhuosi">卓新思创，起源服务于专业技术人员继续教育基地的在线培训平台。受到客户的...</p>
+						</div>
+					</li>
+					<li class="content_one">
+						<div class="li-img">
+							<img src="images/list_img03.jpg" alt="" />
+						</div>
+						<div class="li-font">
+							<p class="zhuo">卓新思创重装出发</p>
+							<p class="shuzi">2016-1-11</p>
+							<p class="zhuosi">卓新思创，起源服务于专业技术人员继续教育基地的在线培训平台。受到客户的...</p>
+						</div>
+					</li>
+					<li class="content_one">
+						<div class="li-img">
+							<img src="images/list_img04.jpg" alt="" />
+						</div>
+						<div class="li-font">
+							<p class="zhuo">卓新思创重装出发</p>
+							<p class="shuzi">2016-1-11</p>
+							<p class="zhuosi">卓新思创，起源服务于专业技术人员继续教育基地的在线培训平台。受到客户的...</p>
+						</div>
+					</li>
+					<li class="content_one">
+						<div class="li-img">
+							<img src="images/list_img01.jpg" alt="" />
+						</div>
+						<div class="li-font">
+							<p class="zhuo">卓新思创重装出发</p>
+							<p class="shuzi">2016-1-11</p>
+							<p class="zhuosi">卓新思创，起源服务于专业技术人员继续教育基地的在线培训平台。受到客户的...</p>
+						</div>
+					</li>
+					<li class="content_one">
+						<div class="li-img">
+							<img src="images/list_img02.jpg" alt="" />
+						</div>
+						<div class="li-font">
+							<p class="zhuo">卓新思创重装出发</p>
+							<p class="shuzi">2016-1-11</p>
+							<p class="zhuosi">卓新思创，起源服务于专业技术人员继续教育基地的在线培训平台。受到客户的...</p>
+						</div>
+					</li>
+					<li class="content_one">
+						<div class="li-img">
+							<img src="images/list_img03.jpg" alt="" />
+						</div>
+						<div class="li-font">
+							<p class="zhuo">卓新思创重装出发</p>
+							<p class="shuzi">2016-1-11</p>
+							<p class="zhuosi">卓新思创，起源服务于专业技术人员继续教育基地的在线培训平台。受到客户的...</p>
+						</div>
+					</li>
+					<li class="content_one">
+						<div class="li-img">
+							<img src="images/list_img04.jpg" alt="" />
+						</div>
+						<div class="li-font">
+							<p class="zhuo">卓新思创重装出发</p>
+							<p class="shuzi">2016-1-11</p>
+							<p class="zhuosi">卓新思创，起源服务于专业技术人员继续教育基地的在线培训平台。受到客户的...</p>
+						</div>
+					</li>
+				</ul>
+				
+				
+				<div class="shubiao-img">
+					<img class="no-img" src="images/list_gomore_bgaa.jpg" alt="" />
+				</div>
+			</div>
+		</div>
+		
+		<!--模板-->
+    <div id="itemHtml" style="display:none;">
+       <li class="content_one" articleId = "$articleId$"> 
+	        <div class="li-img">
+			   <img src="$articleCover$" alt="" />
+			</div>
+			<div class="li-font">
+				<p class="zhuo">$articleTitle$</p>
+				<p class="shuzi">$updateTime$</p>
+				<p class="zhuosi">$describe$</p>
+			</div>
+    	</li>
+    </div>
+    
+    <div id="footers"></div>
+    <script>
+    $(function(){
+    	
+    	$("#header").load("head.html");
+	    $("#footers").load("foot.html");
+	    
+	    //	scroll
+    $(window).scroll(function(){
+			     var sctop = $(this).scrollTop();
+				  //alert(sctop);
+				  if(sctop>300){
+					$(".scroll").show();
+				  }else{
+				    $(".scroll").hide()
+				  }
+			  })
+    
+    $(".scroll-one").click(function(){
+			      $("body,html").animate({scrollTop:"0"},600);
+			  });
+    })
+    </script>
+	</body>
+</html>

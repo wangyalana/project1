@@ -1,0 +1,34 @@
+/*head*/
+	             .header_wrap{
+					width: 100%;min-width: 1060px;
+					background: url(../images/header.gif) repeat-x 0 -297px;
+				}
+				.header{width: 1060px;margin:0 auto;}
+				.header-nav ul.nav-ul{padding-top:5px;box-sizing: border-box;}
+				.header-nav ul.nav-ul li{position:relative;float:left;font-size: 16px;font-family: "微软雅黑";color: #fff;margin-left: 20px;height:31px;}
+				.header-nav ul.nav-ul li a{color:#fff;}
+				.quan{color: #fff;font-size: 16px;font-family: "微软雅黑";}
+				.left-logo{width: 120px;height: 44px;margin-top: 30px;}
+				.hbia{width: 100%;}
+				.hh{overflow:hidden;width: 1060px;height:100px;margin: 0 auto;}
+				.header-input{position: relative;width:623px;height:36px;background:;margin-top:30px;margin-left: 270px;}
+				.header-input .h-input{padding-left:10px;width:491px;height:32px;border: 2px solid #0050bb;}
+				.h-button{position:absolute;top:0px;right:-13px;border:0;width: 132px;height: 36px;background: #0050bb;color: #fff;font-size: 18px;font-weight: 700;letter-spacing: 5px;}
+				.nav-img{margin-left: 10px;color: #ccc;}
+				.nav-li{margin-right: px;position: relative;}
+				.header_wrap .header .feicui{z-index:10;display: none;position: absolute;width:180px;background: #666;left:-35px;top:40px;margin-right:20px;}
+				.header_wrap .header .feicui li{transition:.5s;text-align: center;width:180px;line-height:33px;float:none;margin:0px;}
+				.header_wrap .header .feicui li:hover{background:url(../images/nav_li_bg.png) no-repeat;background-position:165px center;background-color:#0050bb;padding-left:10px;box-sizing: border-box;}
+				/*.nav-img:hover .feicui{display: block;}*/
+				.active{background: url(../images/nav_now_bg.png) no-repeat;background-position: center 25px;}
+				.active1{background: url(../images/nav_now_bg.png) no-repeat;background-position: center 25px;}
+/*foot*/
+         #foot{width: 100%;min-width: 1100px;background:#eee;border: 1px solid #dfdfdf;}
+         .foot-box{width: 1100px;height: 200px;margin:auto;padding-top: 20px;box-sizing: border-box;}
+         .footer-dl{color: #333;font-size:12px;line-height: 18px;float: left;font-family: "微软雅黑";margin-right: 103px;}
+         .footer-dl dt{font-weight: bold;}
+         .foot-bottom{width: 1100px;height: 23px;padding: 12px 10px 0 10px;color: #fff;font-size: 12px;margin: 0 auto;}
+         .foot-bottom a{color: #fff;}
+         .foot-bottom a:hover{text-decoration: underline;}
+        .footer-bom{width: 100%;background:#666;}
+         
